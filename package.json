@@ -21,16 +21,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {},
-"scripts": {
-	"commitmsg": "commitlint -e $GIT_PARAMS"
-},
-"config": {
-	"commitizen": {
-		"path": "cz-customizable"
-	}
-}
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  }
 }
